@@ -27,5 +27,5 @@ Welcome to the official company website for the **Volkswagen Golf GTI**. This si
 - A clean, functional contact form for customer inquiries
 - Includes essential contact info like phone, email, and social links
 
-## 📁 Folder Structure
+
 
