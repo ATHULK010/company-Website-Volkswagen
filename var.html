@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Volkswagen Variants</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      padding-top: 70px; /* space for fixed navbar */
+    }
+
+    .card {
+      background-color: #111;
+      border: none;
+      border-radius: 15px;
+      color: white;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0.8rem 1.5rem rgba(255, 255, 255, 0.25);
+      z-index: 10;
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .card-img-top {
+      border-radius: 15px 15px 0 0;
+      object-fit: cover;
+      height: 180px;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.1);
+    }
+
+    .color-circle {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-left: 8px;
+      vertical-align: middle;
+      border: 1px solid #ccc;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .half-moonstone-grey {
+      background: linear-gradient(to right, grey 50%, black 50%);
+    }
+
+    .half-kings-red-metallic {
+      background: linear-gradient(to right, red 50%, black 50%);
+    }
+
+    .half-grenadilla-black-metallic {
+      background: linear-gradient(to right, black 50%, black 50%);
+      border: 1px solid #666;
+    }
+
+    .oryx-white-mother-of-pearl {
+      background-color: white;
+      border: 1px solid #999;
+    }
+
+    .price {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-top: 10px;
+    }
+
+    a.nav-link {
+      color: white !important;
+    }
+
+    .card-body {
+      flex-grow: 1;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: color 0.3s ease;
+    }
+
+    .btn-light {
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-light:hover {
+      background-color: #0d6efd;
+      color: white;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="imgsvids/logo1..png" alt="Volkswagen Logo" style="filter: brightness(0) invert(1); height: 40px;" />
+      Volkswagen
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavVar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavVar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="var.html">Variants</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container mt-4">
+  <div class="row g-4">
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100">
+        <img class="card-img-top" src="imgsvids/grey.png" alt="Golf GTI Moonstone Grey" />
+        <div class="card-body">
+          <h5 class="card-title">Golf GTI</h5>
+          <p class="card-text">
+            Colour:
+            <span class="color-circle half-moonstone-grey" title="Moonstone Grey"></span> Moonstone Grey
+          </p>
+          <p class="price">&#8377; 52,99,000</p>
+          <a href="contact.html" class="btn btn-light mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100">
+        <img class="card-img-top" src="imgsvids/white.png" alt="Golf GTI Oryx White Mother of Pearl Effect" />
+        <div class="card-body">
+          <h5 class="card-title">Golf GTI</h5>
+          <p class="card-text">
+            Colour:
+            <span class="color-circle oryx-white-mother-of-pearl" title="Oryx White Mother of Pearl Effect"></span> Oryx White Mother of Pearl Effect
+          </p>
+          <p class="price">&#8377; 53,68,000</p>
+          <a href="contact.html" class="btn btn-light mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100">
+        <img class="card-img-top" src="imgsvids/red.png" alt="Golf GTI Kings Red Metallic"/>
+        <div class="card-body">
+          <h5 class="card-title">Golf GTI</h5>
+          <p class="card-text">
+            Colour:
+            <span class="color-circle half-kings-red-metallic" title="Kings Red Metallic"></span> Kings Red Metallic
+          </p>
+          <p class="price">&#8377; 54,54,000</p>
+          <a href="contact.html" class="btn btn-light mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100">
+        <img class="card-img-top" src="imgsvids/bl.png" alt="Golf GTI Grenadilla Black Metallic" />
+        <div class="card-body">
+          <h5 class="card-title">Golf GTI</h5>
+          <p class="card-text">
+            Colour:
+            <span class="color-circle half-grenadilla-black-metallic" title="Grenadilla Black Metallic"></span> Grenadilla Black Metallic
+          </p>
+          <p class="price">&#8377; 55,66,000</p>
+          <a href="contact.html" class="btn btn-light mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<footer>
+  &copy; 2025 Volkswagen India. All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

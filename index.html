@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Volkswagen Golf GTI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body { background-color: #000; color: #fff; }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .navbar-brand img { height: 50px; }
+    .navbar-brand span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+      transition: all 0.3s ease;
+      border-radius: 5px;
+      padding: 8px 15px;
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      background-color: rgba(255,255,255,0.1);
+      color: #fff !important;
+      text-decoration: none;
+    }
+    .navbar-nav .nav-link:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .carousel-item video,
+    .carousel video {
+      width: 100%;
+      height: auto;
+    }
+
+    .video-controls {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+    .video-controls i {
+      font-size: 2.5rem;
+      color: white;
+      margin-right: 15px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .video-controls i:hover {
+      transform: scale(1.2);
+    }
+
+    .golf-section {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      margin-top: 20px;
+    }
+    .golf-section .left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .golf-section .left img {
+      height: 50px;
+    }
+    .golf-section .subtitle {
+      font-weight: normal;
+      font-size: 1rem;
+      margin-top: 4px;
+      font-style: italic;
+    }
+    .golf-section .right .btn {
+      background-color: white;
+      color: black;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 10px 25px;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .golf-section .right .btn:hover {
+      background-color: #ddd;
+      color: black;
+      text-decoration: none;
+    }
+
+    .carousel-text-bottom-left {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: black;
+      font-size: 2.5rem;
+      font-weight: bold;
+      user-select: none;
+      pointer-events: none;
+      text-shadow: 1px 1px 0 #fff;
+    }
+
+    .icon-section a img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+    .icon-section a strong {
+      font-size: 1.5rem;
+      display: block;
+      margin-top: 5px;
+    }
+
+    .card-section i {
+      font-size: 1.3rem;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="imgsvids/logo1..png" alt="Volkswagen Logo" style="filter: brightness(0) invert(1);" />
+      <span class="text-white">Volkswagen</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavContact">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavContact">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="var.html">Variants</a></li>
+     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" style="position: relative;">
+  <div class="carousel-inner">
+    <div class="carousel-item active position-relative">
+      <video id="poloVideo" muted autoplay loop playsinline>
+        <source src="./imgsvids/Volkswagen Golf GTI.mp4" type="video/mp4" />
+        Your browser does not support HTML video.
+      </video>
+      <div class="video-controls">
+        <i id="playIcon" class="bi bi-play-circle-fill"></i>
+        <i id="pauseIcon" class="bi bi-pause-circle-fill"></i>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<section class="golf-section">
+  <div class="left">
+    <img src="imgsvids/logo1..png" alt="VW Logo" style="filter: brightness(0) invert(1); height: 60px;" />
+    <div>
+      GOLF GTI<br />
+      <span class="subtitle">Enough said.</span>
+    </div>
+  </div>
+  <div class="right">
+    <a href="know.html" class="btn btn-light">Know More</a>
+  </div>
+</section>
+
+<div id="golfCarousel" class="carousel slide mt-5 position-relative" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active position-relative">
+      <img src="https://cdn.pursuitist.com/wp-content/uploads/2025/05/Original-19048-my25-golf-gti-group-shot-exterior-trahan-0126.jpg" class="d-block w-100" alt="golf" />
+      <div class="carousel-text-bottom-left">Breathe. Just.</div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/original-18922-2025-golf-gti-autobahn-kings-red-metallic-14-680fe9df5368c.jpg" class="d-block w-100" alt="golf1" />
+      <div class="carousel-text-bottom-left">Breathe. Just.</div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/23-2025-golf-gti-autobahn-kings-red-metallic-13-680b97f8d4588.jpg" class="d-block w-100" alt="golf2" />
+      <div class="carousel-text-bottom-left">Breathe. Just.</div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/73-2025-golf-gti-autobahn-kings-red-metallic-63-680b9639de313.jpg" class="d-block w-100" alt="golf3" />
+      <div class="carousel-text-bottom-left">Breathe. Just.</div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#golfCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#golfCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<section class="text-center my-5 icon-section">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <a href="var.html" class="text-decoration-none">
+          <div class="card bg-dark text-light h-100 border-light d-flex justify-content-center align-items-center p-4">
+            <i class="bi bi-calendar-check display-1 mb-3"></i>
+            <h5 class="card-title">Book Now</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="dealer.html" class="text-decoration-none">
+          <div class="card bg-dark text-light h-100 border-light d-flex justify-content-center align-items-center p-4">
+            <i class="bi bi-geo-alt-fill display-1 mb-3"></i>
+            <h5 class="card-title">Dealer</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark text-light p-5">
+  <div class="container">
+    <h5><i class="bi bi-exclamation-triangle-fill"></i> Disclaimers</h5>
+    <p>This website is for informational purposes only. Specifications, images, and features shown may vary by model and market. Actual availability is subject to change.</p>
+  </div>
+</section>
+
+<section class="bg-black text-light p-5">
+  <div class="container">
+    <h5><i class="bi bi-file-earmark-text-fill"></i> Terms and Conditions</h5>
+    <p>By accessing this site, you agree to our terms of service and privacy policy. All trademarks and copyrights belong to Volkswagen AG.</p>
+  </div>
+</section>
+
+<footer class="bg-black text-center text-light py-3">&copy; 2025 Volkswagen India. All rights reserved.</footer>
+
+
+<a href="test.html" class="btn btn-primary position-fixed d-flex align-items-center gap-2"
+   style="bottom: 20px; right: 20px; z-index: 1050; border-radius: 50px; padding: 10px 20px;">
+  <i class="bi bi-steering-wheel"></i> Test Drive
+</a>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const video = document.getElementById('poloVideo');
+  const playIcon = document.getElementById('playIcon');
+  const pauseIcon = document.getElementById('pauseIcon');
+
+  playIcon.onclick = () => video.play();
+  pauseIcon.onclick = () => video.pause();
+</script>
+
+</body>
+</html>
